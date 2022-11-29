@@ -1,2 +1,18 @@
-# Project exclude paths
+# CM
+client-file-path/
+server-file-path/
+.cm-settings/
+# Eclipse
+bin/
+.classpath
+.project
+.settings/
+# Maven
 /target/
+# OS
+.DS_Store
+../.DS_Store
+# Intellij
+.idea/
+*.iml
+*.iws
