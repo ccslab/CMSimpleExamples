@@ -12,6 +12,8 @@ import java.util.Scanner;
  * A simple CM client application to test sending a user event
  * <h1>Note</h1>
  * Before you run this client, you must run a server (CMServerApp).
+ * <br>Check that the SERVER_ADDR field of the cm-client.conf file is the same as that of
+ * the cm-server.conf file.
  * <br>After you run this client,
  * <br>1. The client logs in to the server with the user name "ccslab".
  * <br>2. If you press the enter key, the client sends a user event to the server.

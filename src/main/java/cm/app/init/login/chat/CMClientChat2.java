@@ -10,6 +10,8 @@ import java.util.Scanner;
  * A simple CM client application to test chat messages
  * <h1>Note</h1>
  * Before you run this client, you must run a server (CMServerApp).
+ * <br>Check that the SERVER_ADDR field of the cm-client.conf file is the same as that of
+ * the cm-server.conf file.
  * <br>After you run this client, you can also run another client (CMClientChat1).
  * <br>1. the client logs in to the server with the user name "mlim".
  * <br>2. If you press the enter key, you can test to send chat messages to the specified target.

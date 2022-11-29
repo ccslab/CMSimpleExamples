@@ -10,6 +10,8 @@ import java.util.Scanner;
  * A simple CM client application to test receiving dummy events
  * <h1>Note</h1>
  * Before you run this client, you must run a server (CMServerApp) and a sender client (CMClientDummySender).
+ * <br>Check that the SERVER_ADDR field of the cm-client.conf file is the same as that of
+ * the cm-server.conf file.
  * <br>After you run this client,
  * <br>1. the client logs in to the server with the user name "mlim".
  * <br>2. If you press the enter key, the client prints out current session and group names.
