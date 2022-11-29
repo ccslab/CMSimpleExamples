@@ -1,6 +1,7 @@
 package cm.app.init.login;
 
 import kr.ac.konkuk.ccslab.cm.event.CMEvent;
+import kr.ac.konkuk.ccslab.cm.event.CMFileEvent;
 import kr.ac.konkuk.ccslab.cm.event.CMSessionEvent;
 import kr.ac.konkuk.ccslab.cm.event.CMUserEvent;
 import kr.ac.konkuk.ccslab.cm.event.handler.CMAppEventHandler;
@@ -22,6 +23,9 @@ public class CMServerEventHandler implements CMAppEventHandler {
                 break;
             case CMInfo.CM_USER_EVENT:
                 processUserEvent(cme);
+                break;
+            case CMInfo.CM_FILE_EVENT:
+                processFileEvent(cme);
                 break;
             default:
                 break;
@@ -53,6 +57,26 @@ public class CMServerEventHandler implements CMAppEventHandler {
                 break;
             default:
                 System.err.println("--> unknown CMUserEvent ID: "+ue.getStringID());
+        }
+    }
+
+    private void processFileEvent(CMEvent cme) {
+        CMFileEvent fe = (CMFileEvent)cme;
+        switch(fe.getID()) {
+            case CMFileEvent.END_FILE_TRANSFER:
+            case CMFileEvent.END_FILE_TRANSFER_CHAN:
+                System.out.println("--> ["+fe.getFileSender()+"] completes to send file("
+                        +fe.getFileName()+", "+fe.getFileSize()+" Bytes) to ["
+                        +fe.getFileReceiver()+"]");
+                break;
+            case CMFileEvent.END_FILE_TRANSFER_ACK:
+            case CMFileEvent.END_FILE_TRANSFER_CHAN_ACK:
+                System.out.println("--> ["+fe.getFileReceiver()+"] completes to receive file("
+                        +fe.getFileName()+", "+fe.getFileSize()+" Bytes) from ["
+                        +fe.getFileSender()+"]");
+                break;
+            default:
+                break;
         }
     }
 }
