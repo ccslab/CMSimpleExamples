@@ -5,7 +5,7 @@ Simple example CLI client and server programs using Communication Framework (CM 
 You should install CM library (v2.6.7~) to the local Maven repository.
 The detailed information is described in CM user guide that is available at the link: (https://sites.google.com/site/kuccslab/research/cm).
 
-# How to build in IntelliJ IDEA
+# How to build in IntelliJ IDEA (version 2022.2.4)
 1. Run IntelliJ IDEA.
 2. If an existing project opens, close it.
 3. Click "Get from VCS".
