@@ -7,8 +7,8 @@ The detailed information is described in CM user guide that is available at the 
 
 # How to build in IntelliJ IDEA (version 2022.2.4)
 1. Run IntelliJ IDEA.
-2. If an existing project opens, close it.
-3. Click "Get from VCS".
+2. If an existing project opens, select "File"->"New"->"Project from Version Control...".
+3. If no project opens, click "Get from VCS".
 4. In URL field, type https://github.com/ccslab/CMSimpleExamples.git, and click "Clone".
 5. For each server and client class, please refer to comments for more information.
 
