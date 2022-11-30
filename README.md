@@ -1,5 +1,5 @@
 # CMSimpleExamples
-Simple example CLI client and server programs using Communication Framework (CM v2.6.7 ~)
+Simple CLI client and server examples using Communication Framework (CM v2.6.7 ~)
 
 # Prerequisite
 You should install CM library (v2.6.7~) to the local Maven repository.
